@@ -10,7 +10,7 @@ import com.example.busSchedule.database.schedule.ScheduleDao
  * Because ViewModel is meant to handle lifecycle events, and
  * fragment/activity accesses ViewModel through Factory,
  * There seems to be no reason to have this class as public.*/
-private class BusScheduleViewModel(private val scheduleDao: ScheduleDao): ViewModel() {
+class BusScheduleViewModel(private val scheduleDao: ScheduleDao): ViewModel() {
     fun fullSchedule(): List<Schedule> = scheduleDao.getAll()
 
     fun scheduleForStopName(name:String):List<Schedule> = scheduleDao.getByStopName(name)

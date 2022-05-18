@@ -23,7 +23,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BusScheduler"
-        android:name=".BusScheduleApplication">
+        android:name="com.example.busSchedule.BusScheduleApplication">
         <activity android:name="com.example.busSchedule.MainActivity"
             android:exported="true">
             <intent-filter>
